@@ -1,23 +1,28 @@
 <template>
   <section class="main">
-      <nav class="main__nav">
+    <header class="main__header">
+      <nav class="main__nav navbar-fixed">
         <router-link to="/">
-          <div class="main__logo animate__bounceIn animate__animated">
-            Boa.
+          <div class="main__logo relative">
+            <div class="first animate__bounceIn animate__animated">B</div>
+            <div class="second animate__bounceIn animate__animated">o</div>
+            <div class="third animate__bounceIn animate__animated">a</div>
+            <div class="fourth animate__bounceIn animate__animated">.</div>
           </div>
         </router-link>
-        <MenuButton/>
+        <MyMenu/>
       </nav>
-      <router-view />
+    </header>
+    <router-view />
   </section>
 </template>
 
 <script>
-import MenuButton from "@/components/promo/MenuButton";
+import MyMenu from "@/components/promo/MyMenu";
 
 export default {
   name: 'main-layout',
-  components: {MenuButton}
+  components: {MyMenu}
 }
 </script>
 
@@ -28,17 +33,28 @@ export default {
     position: fixed;
     display: flex;
     justify-content: space-between;
-    padding: 10px 40px;
     background: var(--color-background);
-    height: 70px;
-    box-shadow: none;
-    border: none;
   }
   &__logo {
+    display: flex;
     font-family: 'Indie Flower', cursive;
-    color: white;
     font-size: 26px;
-    animation-delay: 3s;
+    padding-left: 20px;
+    div {
+      color: white;
+    }
   }
+}
+.first {
+  animation-delay: 5.3s;
+}
+.second {
+  animation-delay: 5.4s;
+}
+.third {
+  animation-delay: 5.5s;
+}
+.fourth {
+  animation-delay: 5.6s;
 }
 </style>

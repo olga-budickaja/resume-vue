@@ -8,32 +8,15 @@
             <img
                 src="../assets/img/olga-budytska.jpg"
                 alt="My name Olga Budytska. I`m Frontend Developer"
-            >
+                class="relative"
+              >
+            <MyContacts class="contacts"/>
           </div>
-        <div class="promo__description">
+        <div class="promo__description relative">
           <MyTitle/>
         </div>
-
       </div>
-      <!--    <aside class="side-panel">-->
-      <!--      <div class="side-panel__link">-->
-      <!--        <i class="tiny material-icons">insert_emoticon</i>-->
-      <!--      </div>-->
-      <!--      <div class="side-panel__link">-->
-      <!--        <i class="tiny material-icons">account_box</i>-->
-      <!--      </div>-->
-      <!--      <div class="side-panel__link">-->
-      <!--        <i class="tiny material-icons">camera</i>-->
-      <!--      </div>-->
-      <!--      <div class="side-panel__divider"></div>-->
-      <!--      <div class="side-panel__text"><span>Socials</span></div>-->
-
-      <!--      <div class="promo__btns">-->
-      <!--        <a class="waves-effect waves-light btn light-blue darken-4"><i class="material-icons right white-text">file_download</i>Save resume</a>-->
-      <!--      </div>-->
-      <!--    </aside>-->
     </div>
-
   </section>
   <div class="box"></div>
 
@@ -41,13 +24,15 @@
 
 <script>
 import MyTitle from "@/components/promo/MyTitle";
+import MyContacts from "@/UI/MyContacts";
 
 export default {
   components: {
-    MyTitle
+    MyContacts,
+    MyTitle,
   },
   data: () => ({
-
+    iconColor: '#ffffff'
   }),
   methods: {
     colorBackground() {
@@ -75,16 +60,21 @@ export default {
     margin: 0 auto;
     z-index: 5;
   }
-  &__btns {
-    text-align: center;
-    margin-top: 20px;
-  }
   &__image {
     position: absolute;
     left: 0;
     transform: translateY(-50%);
     animation-delay: 4s;
     opacity: 0;
+  }
+  &__btns {
+    position: absolute;
+    bottom: -80px;
+    left: calc(50% - 75px);
+    animation-delay: 5s;
+  }
+  &__link {
+    margin-right: 10px;
   }
   .container {
     height: calc(100vh - 20px);
@@ -115,44 +105,9 @@ export default {
   animation: animSlide 2.4s ease-in-out 0.8s normal none running;
   background: var(--color-background-light);
 }
-.side-panel {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+.contacts {
   position: absolute;
-  top: 230px;
-  right: 40px;
-  height: 340px;
-  color: #fff;
-  &__link {
-    transform: rotate(90deg);
-    //svg {
-    //  fill: rgba(255, 255, 255, 1);
-    //  &:hover {
-    //    fill: rgba(255, 255, 255, .7);
-    //  }
-    //}
-  }
-  &__divider {
-    width: 2px;
-    height: 70px;
-    background-color: #000;
-  }
-  &__text {
-    width: 25px;
-    height: 150px;
-    span {
-      display: block;
-      transform: rotate(90deg) translate(-30%, -260%);
-      width: 0;
-      margin-left: -43px;
-      font-weight: 600;
-    }
-  }
-  i {
-    width: 20px;
-    height: 20px;
-  }
+  bottom: 20px;
+  right: 15px;
 }
 </style>
