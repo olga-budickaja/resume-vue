@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "generate-icons": "vsvg -s ./svg-icons -t ./src/compiled-icons",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
   },

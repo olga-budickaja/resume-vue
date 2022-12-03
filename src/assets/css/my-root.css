@@ -1,0 +1,13 @@
+:root
+{
+    --color-background: #133340;
+    --color-subtitle: #88888a;
+    --color-background-light: #5BCCD9;
+    --color-yelow: #ffb510;
+    --color-pink: #e91e63;
+    --duration: 0;
+
+    --animate-duration: 1s;
+    --animate-delay: 1s;
+    --animate-repeat: 1;
+}
