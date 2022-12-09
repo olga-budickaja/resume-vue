@@ -1,5 +1,5 @@
-import GitHubIcon from "@/UI/GitHubIcon";
-import InstagramIcon from "@/UI/LinkedinIcon";
+import GitHubIcon from "@/components/icons/GitHubIcon";
+import InstagramIcon from "@/components/icons/LinkedinIcon";
 
 export default [
     GitHubIcon,

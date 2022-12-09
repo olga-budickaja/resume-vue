@@ -20,7 +20,10 @@ export default {
   },
   directives: {
     ResizeText: VueResizeText.ResizeText
-  }
+  },
+  // mounted () {
+  //   M.AutoInit()
+  // },
 }
 </script>
 

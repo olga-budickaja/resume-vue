@@ -18,13 +18,14 @@
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #F5F5F5;
-    outline: 1px solid #F5F5F5;
+    background-color: var(--color-background);
+    outline: 1px solid var(--color-background);
 }
 
 body, html {
-    background: #F5F5F5;
+    background: var(--color-background);
     height: calc(100vh - 64px);
+    color: var(--color-text)
 }
 
 .container {
@@ -39,7 +40,16 @@ img {
 .header {
     margin-top: 0 !important;
 }
-
+.title {
+    color: #fff;
+    font-weight: 800;
+    margin: 0;
+}
+.subtitle {
+    color: var(--color-subtitle);
+    margin-top: 20px;
+    text-transform: uppercase;
+}
 .my-fadein {
     animation: mainFadeIn 1.6s forwards;
     animation-delay: 0.5s;
@@ -78,6 +88,28 @@ img {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row > .col {
+    display: flex;
+}
+
+.page-footer > .row {
+    display: block !important;
+}
+.page-footer .row > .col {
+    display: block !important;
+}
+
+.card {
+    width: 100%;
+}
+.slider .indicators .indicator-item.active {
+    background-color: var(--color-yelow-light);
 }
 
 @media (max-width: 1439px) {

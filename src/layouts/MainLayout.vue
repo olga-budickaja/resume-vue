@@ -1,5 +1,5 @@
 <template>
-  <section class="main">
+  <div class="main">
     <header class="main__header">
       <nav class="main__nav navbar-fixed">
         <router-link to="/">
@@ -13,16 +13,18 @@
         <MyMenu/>
       </nav>
     </header>
-    <router-view />
-  </section>
+    <router-view/>
+    <MyFooter />
+  </div>
 </template>
 
 <script>
 import MyMenu from "@/components/promo/MyMenu";
+import MyFooter from "@/components/footer/MyFooter";
 
 export default {
   name: 'main-layout',
-  components: {MyMenu}
+  components: {MyFooter, MyMenu},
 }
 </script>
 
