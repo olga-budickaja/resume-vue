@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    color: #0D0D0D;
+}
+
+* > a {
+    text-decoration: none;
+}
+*::-webkit-scrollbar {
+    width: 3px;
+}
+
+*::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--color-background);
+    outline: 1px solid var(--color-background);
+}
+
+body, html {
+    background: var(--color-background);
+    height: calc(100vh - 64px);
+    color: var(--color-text)
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header {
+    margin-top: 0 !important;
+}
+.title {
+    color: #fff;
+    font-weight: 800;
+    margin: 0;
+}
+.subtitle {
+    color: var(--color-subtitle);
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.my-fadein {
+    animation: mainFadeIn 1.6s forwards;
+    animation-delay: 0.5s;
+}
+.my-fadein-plus {
+    animation: mainFadeIn 0.3s forwards;
+    animation-delay: 3s;
+}
+.my-fadein-plus-plus {
+    animation: mainFadeIn 0.3s forwards;
+    animation-delay: 4s;
+}
+
+.v-application .mt-5 {
+    margin: 0 !important;
+}
+.height {
+    min-height: calc(100vh - 64px);
+}
+.border {
+    border-bottom: 1px solid #00000029 !important;
+}
+.border2 {
+    border-bottom: 2px solid #00000029 !important;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row > .col {
+    display: flex;
+}
+
+.page-footer > .row {
+    display: block !important;
+}
+.page-footer .row > .col {
+    display: block !important;
+}
+
+.card {
+    width: 100%;
+}
+.slider .indicators .indicator-item.active {
+    background-color: var(--color-yelow-light);
+}
+
+@media (max-width: 1439px) {
+
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
