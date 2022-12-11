@@ -53,7 +53,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(process.env.NODE_ENV === 'production' ? '/resume-vue/' : '/'),
   routes
 })
 
