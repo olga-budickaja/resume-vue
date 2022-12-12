@@ -1,9 +1,9 @@
 <template>
-  <form class="form" @submit.prevent="submitHandler">
+  <form class="form" method="post" @submit.prevent="submitHandler">
     <div class="input-field">
       <i class="material-icons grey-text text-lighten-4 prefix">account_circle</i>
       <input
-          id="autocomplete-input"
+          id="icon_prefix"
           type="text"
           class="white-text"
           v-model="name"
@@ -54,6 +54,7 @@
 
 import { useVuelidate } from '@vuelidate/core'
 import { required, minLength, numeric,   } from '@vuelidate/validators'
+import axios from "axios";
 
 export default {
   name: 'my-input',
@@ -63,7 +64,10 @@ export default {
   data: () => ({
     name: '',
     phone: '',
-    agree: ''
+    agree: '',
+    //Telegram bot
+    token: '5819997919:AAGz0sV3_P-el-kufjGTm8bIB6t-M49giCo',
+    chatId: '674088279'
   }),
   validations() {
     return {
@@ -82,6 +86,22 @@ export default {
         return
       }
       this.visibleTooltips()
+      const requestTelegramPost = async (url, data) => {
+        try {
+          return await axios.post(url, data)
+        }catch (e) {
+          console.log(e)
+        }
+      }
+      requestTelegramPost(`https://api.telegram.org/bot${this.token}/sendMessage?chat_id=${this.chatId}&text=${fullMessage}`, {
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded'}
+      })
+          .then((res) => {
+            console.log(res.data)
+          })
+      // const fullMessage = `Full name: ${this.name}\nTelephon: ${this.phone}`
+      // console.log(fullMessage)
+      // this.$http.post(`The message was sent successfully Sending url: https://api.telegram.org/bot${this.token}/sendMessage?chat_id=${this.chatId}&text=${fullMessage}`)
     },
     visibleTooltips() {
       M.toast({html: 'Data send!', displayLength: 2000})

@@ -7,7 +7,7 @@
             <div class="first animate__bounceIn animate__animated">B</div>
             <div class="second animate__bounceIn animate__animated">o</div>
             <div class="third animate__bounceIn animate__animated">a</div>
-            <div class="fourth animate__bounceIn animate__animated">.</div>
+            <div class="fourth animate__bounceIn animate__animated yellow-text">.</div>
           </div>
         </router-link>
         <MyMenu/>
