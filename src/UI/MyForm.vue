@@ -93,14 +93,11 @@ export default {
           console.log(e)
         }
       }
+      const fullMessage = `Full name: ${this.name}\nTelephon: ${this.phone}`
       requestTelegramPost(`https://api.telegram.org/bot${this.token}/sendMessage?chat_id=${this.chatId}&text=${fullMessage}`, {
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded'}
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded'},
       })
-          .then((res) => {
-            console.log(res.data)
-          })
-      // const fullMessage = `Full name: ${this.name}\nTelephon: ${this.phone}`
-      // console.log(fullMessage)
+      console.log(fullMessage)
       // this.$http.post(`The message was sent successfully Sending url: https://api.telegram.org/bot${this.token}/sendMessage?chat_id=${this.chatId}&text=${fullMessage}`)
     },
     visibleTooltips() {

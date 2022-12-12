@@ -6,7 +6,7 @@ export const educationModule = {
                 title: 'My skills',
                 icon: 'star',
                 description: [
-                    {id: 'ydtj', text: 'HTML5 and CSS3 (Bootstrap, CSS Grid, Flexbox Css), Gulp4, JavaScript (ES5,6), React, Redux, Vue, Vue-CLI, Vuex, Webpack, SASS, SCSS, LESS, Pug, Nodes, CMS OpenCart, SQL'}
+                    {id: 'ydtj', text: 'React, Redux, Vue, Vue-CLI, Vuex, JavaScript (ES5,6), HTML5 and CSS3 (Bootstrap, CSS Grid, Flexbox Css), Gulp4, Webpack, SASS, SCSS, LESS, Pug, Nodes, CMS OpenCart, SQL'}
                 ]
             },
             {
@@ -14,7 +14,7 @@ export const educationModule = {
                 title: 'My education',
                 icon: 'school',
                 description: [
-                    {id: 'jytyj', subtitle: 'CyberBionic Systematics - 2022', text: 'courses, Java Developer + React'},
+                    {id: 'jytyj', subtitle: 'CyberBionic Systematics - 2022', text: 'courses, JavaScript Developer + React'},
                     {id: 'jtyd', subtitle: 'IT company Lemon School - 2020', text: 'SEO courses, website promotion'},
                     {id: 'ghfgjdf', subtitle: 'National Technical University «Kharkiv Polytechnic Institute» - 2003', text: 'in the specialty of Networks and Systems'},
                 ]

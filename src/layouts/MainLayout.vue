@@ -32,7 +32,6 @@ export default {
 .main {
   height: 100vh;
   &__nav {
-    position: fixed;
     display: flex;
     justify-content: space-between;
     background: var(--color-background);
