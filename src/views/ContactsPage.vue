@@ -1,5 +1,5 @@
 <template>
-  <section class="contacts">
+  <section class="contacts top70">
     <MainTitle>My Contacts</MainTitle>
     <div class="container">
       <div class="row">
@@ -18,7 +18,7 @@
                   contacts__text-text my-fadein"
                   v-resize-text="{ratio:1.3, minFontSize: '23px', maxFontSize: '43px', delay: 200}"
               >
-                Contact mi about work.
+                Contact me about work.
               </div>
             </div>
           </div>
@@ -85,7 +85,6 @@ export default {
 
 <style scoped lang="scss">
 .contacts {
-  padding: 130px 0;
   &__card {
     background: var(--color-grey-light);
     &-description {

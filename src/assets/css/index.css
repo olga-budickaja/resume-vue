@@ -33,6 +33,10 @@ body, html {
     margin: 0 auto;
 }
 
+.top70 {
+    padding: 70px 0;
+}
+
 img {
     max-width: 100%;
 }

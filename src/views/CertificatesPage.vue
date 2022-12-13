@@ -1,5 +1,5 @@
 <template>
- <section class="certificates">
+ <section class="certificates top70">
    <MainTitle>My certificates</MainTitle>
    <div class="row">
      <div class="col s12 m6">
@@ -64,9 +64,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.certificates {
-  padding: 130px 0;
-}
 .row {
   margin-top: 60px;
 }

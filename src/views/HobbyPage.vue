@@ -1,5 +1,5 @@
 <template>
-  <section class="about animate__animated animate__bounceIn">
+  <section class="about animate__animated animate__bounceIn top70">
     <MyHobby />
   </section>
 </template>
@@ -11,9 +11,3 @@ export default {
   components: {MyHobby}
 }
 </script>
-
-<style scoped>
-.about {
-  padding: 130px 0;
-}
-</style>

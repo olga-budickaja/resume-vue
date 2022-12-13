@@ -1,5 +1,5 @@
 <template>
-  <section class="work">
+  <section class="work top70">
     <MainTitle>My works</MainTitle>
     <div class="work__table">
       <div class="row">
@@ -64,7 +64,6 @@ export default {
 <style scoped lang="scss">
 .work {
   background: var(--color-background);
-  padding: 130px 0;
   &__table {
     margin-top: 60px;
   }

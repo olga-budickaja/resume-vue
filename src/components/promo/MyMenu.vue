@@ -32,7 +32,7 @@
         <router-link to="/about" class="btn-floating myMenu__item-btn waves-effect yellow darken-1 white-text">
           <i class="material-icons">tag_faces</i>
         </router-link>
-        <div class="chip white-text blue-grey darken-4 myMenu__item-chip">About•mi</div>
+        <div class="chip white-text blue-grey darken-4 myMenu__item-chip">About•me</div>
       </li>
       <li class="myMenu__item white-text relative pointer">
         <router-link to="/contacts" class="btn-floating myMenu__item-btn waves-effect yellow darken-1 white-text">

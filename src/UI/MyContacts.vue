@@ -32,7 +32,7 @@
         <img src="../assets/img/resume.png" alt="resume">
       </div>
       <div class="modal-footer">
-        <a href="../assets/Olga%20Budickaja(Frontend%20Java%20Script%20Developer).pdf" class="grey-text modal__download" download>
+        <a href="../assets/Olga_Budytska_Frontend_JavaScript_Developer.pdf" class="grey-text modal__download" download>
           DOWNLOAD
           <icon-base width="16" height="16" icon-name="download-icon" fill="#000000">
             <DownloadIcon
@@ -40,7 +40,7 @@
             />
           </icon-base>
         </a>
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        <a href="/" class="modal-close waves-effect waves-green btn-flat">Close</a>
       </div>
     </div>
   </div>

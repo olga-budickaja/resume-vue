@@ -14,7 +14,7 @@
             <li class="footer__link"><router-link to="/skills">Skills</router-link></li>
             <li class="footer__link"><router-link to="/certificates">Certificates</router-link></li>
             <li class="footer__link"><router-link to="/works">My work</router-link></li>
-            <li class="footer__link"><router-link to="/about">About mi</router-link></li>
+            <li class="footer__link"><router-link to="/about">About me</router-link></li>
             <li class="footer__link"><router-link to="/contacts">Contacts</router-link></li>
           </ul>
           <MyContacts class="footer__contacts"/>

@@ -38,7 +38,7 @@ export default {
   height: 100vh;
 &__wrapper {
    position: absolute;
-   top: 70px;
+   top: 60px;
    left: 0;
    width: 100%;
    height: calc(100vh - 70px);
@@ -88,7 +88,6 @@ export default {
 }
 .slide {
   position: relative;
-  top: 70px;
   height: calc(100vh - 70px);
   width: 0;
   left: 0;

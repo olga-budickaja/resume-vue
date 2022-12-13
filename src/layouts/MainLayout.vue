@@ -13,7 +13,7 @@
         <MyMenu/>
       </nav>
     </header>
-    <router-view/>
+    <router-view />
     <MyFooter />
   </div>
 </template>

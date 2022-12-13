@@ -1,5 +1,5 @@
 <template>
-  <section class="skills">
+  <section class="skills top70">
     <div class="parallax-container">
       <div class="parallax">
         <video
@@ -79,10 +79,9 @@ export default {
 
 <style scoped lang="scss">
 .skills {
-  padding-top: 50px;
   &__description {
     position: absolute;
-    top: 15%;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
